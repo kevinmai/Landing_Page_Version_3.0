@@ -15,7 +15,7 @@
 			<div class="close-button">
 				<div>
 					<img alt="close_button" src="images/close_off_canvas_light.png" >
-					<span>Close Menu<span>
+					<span>Close Menu</span>
 				</div>
 			</div>		
 			<nav id="mobile_menu">
@@ -47,8 +47,8 @@
 						</ul>
 					</li>
 					<li>Contact Us</li>
-
 				</ul>
+			</nav>
 		</section>
 
 		<!-- MOBILE CONTACT FORM -->
@@ -56,7 +56,7 @@
 			<div class="close-button">
 				<div>
 					<img alt="close_button" src="images/close_off_canvas_light.png">
-					<span>Close<span>
+					<span>Close</span>
 				</div>
 			</div>
 			<div class="inner-padding-mobile">	
