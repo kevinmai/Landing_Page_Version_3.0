@@ -601,7 +601,12 @@ body{
 	cursor: pointer;
 }
 
-#close_off_canvas span{
+.close-button > div {
+	border-bottom: 2px solid #666;
+	padding: 20px
+}
+
+.close-button span{
 	font-weight: 600;
 	font-size: 150%;
 	position: absolute;
@@ -618,8 +623,7 @@ body{
 	color: #fff;
 	line-height: 40px;
 	font-size: 30px;
-	padding: 15px;
-
+	padding: 0 15px 15px;
 }
 
 #mobile_menu > ul > li{

@@ -12,9 +12,11 @@
 	<body>
 		<!-- MOBILE MENU -->
 		<section id="off_canvas_menu">
-			<div id="close_off_canvas">
-				<img alt="close_button" src="images/close_off_canvas_light.png" id="close_button">
-				<span>Close Menu<span>
+			<div class="close-button">
+				<div>
+					<img alt="close_button" src="images/close_off_canvas_light.png" >
+					<span>Close Menu<span>
+				</div>
 			</div>		
 			<nav id="mobile_menu">
 				<ul>
@@ -51,9 +53,11 @@
 
 		<!-- MOBILE CONTACT FORM -->
 		<section id="mobile_contact_form">
-			<div id="close_off_contact">
-				<img alt="close_button" src="images/close_off_canvas_light.png" id="close_button">
-				<span>Close<span>
+			<div class="close-button">
+				<div>
+					<img alt="close_button" src="images/close_off_canvas_light.png">
+					<span>Close<span>
+				</div>
 			</div>
 			<div class="inner-padding-mobile">	
 				<form action="" method="post">
@@ -75,7 +79,7 @@
 						<!-- Company Info -->
 							<div id="company_info"><img alt="company logo" src="images/logo.png"></div>
 							<div id="number">
-								<img src="images/mobile-nav.png" id="mobile_nav">
+								<img src="images/mobile-nav.png" id="mobile_nav" rel="trigger_mobile_nav">
 								<p id="top_number"><span>CALL</span> 254-488-5501</p>
 								<p id="sub_title">Local and Trusted Roofing Experts</p>
 							</div>
@@ -105,7 +109,7 @@
 					<div class="container">
 						<div class="inner-padding">
 							<div id="contact_us_mobile">
-								<img src="images/email.png" id="email_logo">
+								<img src="images/email.png" id="email_logo" rel="trigger_mobile_contact">
 								<p>CONTACT US</p>
 							</div>
 
