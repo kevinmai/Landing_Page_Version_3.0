@@ -7,7 +7,7 @@
 		}   
 
 		/****** OFF CANVAS MENU *******/
-		var $trigger = $("img[rel*='trigger_mobile_']");
+		var $trigger = $("div[rel*='trigger_mobile_']");
 		var $off_canvas_menu = $("#off_canvas_menu");
 		var $contact_us_mobile = $("#contact_us_mobile");
 		var $mobile_contact_form = $("#mobile_contact_form");

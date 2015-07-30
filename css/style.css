@@ -662,6 +662,7 @@ body{
 	position: fixed;
 	background: rgba(0,0,0,.75);
 	width: 100%;
+	overflow-y: scroll;
 	height: 100%;
 	left: -100%;
 	z-index: 1;

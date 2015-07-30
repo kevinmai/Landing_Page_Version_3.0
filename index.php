@@ -78,8 +78,10 @@
 						<div class="inner-padding">
 						<!-- Company Info -->
 							<div id="company_info"><img alt="company logo" src="images/logo.png"></div>
-							<div id="number">
-								<img src="images/mobile-nav.png" id="mobile_nav" rel="trigger_mobile_nav">
+							<div id="number" rel="trigger_mobile_nav">
+								<div>
+									<img src="images/mobile-nav.png" id="mobile_nav">
+								</div>
 								<p id="top_number"><span>CALL</span> 254-488-5501</p>
 								<p id="sub_title">Local and Trusted Roofing Experts</p>
 							</div>
@@ -108,8 +110,8 @@
 				<div id="schedule">
 					<div class="container">
 						<div class="inner-padding">
-							<div id="contact_us_mobile">
-								<img src="images/email.png" id="email_logo" rel="trigger_mobile_contact">
+							<div id="contact_us_mobile" rel="trigger_mobile_contact">
+								<img src="images/email.png" id="email_logo">
 								<p>CONTACT US</p>
 							</div>
 
