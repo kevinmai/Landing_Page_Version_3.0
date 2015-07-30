@@ -7,31 +7,37 @@
 		}   
 
 		/****** OFF CANVAS MENU *******/
-		var mobile_button = document.querySelector("#mobile_nav");
+		var $trigger = $("img[rel*='trigger_mobile_']");
 		var $off_canvas_menu = $("#off_canvas_menu");
-		var close_button = document.querySelector("#close_off_canvas");
-		var close_button = document.querySelector("#close_off_contact");
+		var $contact_us_mobile = $("#contact_us_mobile");
 		var $mobile_contact_form = $("#mobile_contact_form");
-
-		mobile_button.addEventListener("click",function(){ 
+		var $close_button = $(".close-button");
+		var $slide_out;
+		
+		$trigger.click(function(){
+			switch(	$(this).attr( "rel" ) ){
+				case "trigger_mobile_nav":
+					$slide_out = $off_canvas_menu;
+					break;
+				case "trigger_mobile_contact":
+					$slide_out = $mobile_contact_form;
+					break;
+			}
 			
-			var $main_wrapper = $("#main_wrapper");
-
-			$off_canvas_menu
-				.animate({left: 0+"px"},"fast")
-				.css({zIndex:11});
+			if($slide_out.css( "left" ) != 0 + "px"){
+				$slide_out
+					.animate( { left : 0 + "px"} , "fast" )
+					.css( { zIndex : 11 } );
+			}
 		});
-		close_off_canvas.addEventListener("click",function(){
-			$off_canvas_menu
-				.animate({left: -100+"%"},"fast")
-				.css({zIndex:1});			
+		
+		$close_button.click(function(){
+			if($(this).parent().css( "left" ) == 0 + "px"){
+				$(this).parent()
+					.animate( { left : -100 + "%" } , "fast" )
+					.css( { zIndex : 1 } )
+			}
 		});
-
-		close_off_contact.addEventListener("click",function(){
-			$mobile_contact_form
-				.animate({left: -100+"%"},"fast");
-		});	
-
 
 		/***** SLIDE OUT FOR MOBILE MENU *******/
 		$(".sub-menu").hide();
